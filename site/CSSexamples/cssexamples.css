@@ -1,0 +1,265 @@
+body{
+    margin:0;
+}
+main{
+    padding:16% 20px;       /*Very important*/
+}
+#task_bar{
+    background-color:#27FB6B;
+    text-decoration: underline;
+    margin-top: 0%;
+    padding-left: 20px;
+    color:rgb(10, 10, 10);
+    text-decoration:none;
+    /* moving elements in and out using z-index*/
+    /* z-index loads on position values other than static(which is by default) */
+    position: relative;   /*Relative to it's position*/
+    z-index: 10;
+    /* It is used to move thing perpendicular to surface */
+    /* position has 4 components- top, right, bottom, left */
+}
+
+.menu-item{
+    text-decoration: none;
+    display:inline; /*Takes whole line by one element*/
+     /* or visibility:hidden; it takes space*/
+    /* for link their are 4 types: hover, active(when clicked), visited, link */
+    /* lvha */
+
+}
+/* this is same for btton also + background-color */
+.menu-item:link{
+    color: yellow;
+}
+.menu-item:visited{
+    color: red;
+}
+.menu-item:hover{
+    color: aqua;
+}
+.menu-item:active{
+    color:black;
+}
+#btn-login{
+    background-color: yellow;
+    padding: 10px 16px;
+    border-radius: 10px;
+     outline: none;       /*USED TO REMOVE OUTLINE AS WE CLICK */
+    cursor:pointer;     /* not-allowed is used to show to user that it is not allowed*/
+    border:none;
+    opacity:.6; /*Takes value b/w 0-1 */
+    float: right;
+
+}
+.label{
+margin:4px;
+/* what is the color of label is the color of icon */
+}
+#google-logo{
+    width: 20px;
+    height: 20px;
+    margin:0% 4ox;
+}
+h1{
+    text-align: center;
+    font-style: italic;
+    color:white;
+    background-color: #036d19;
+    padding: 30px 20px;
+    margin:0;
+    width:100%;
+    height: 40px;
+    position: fixed;
+}
+
+p{
+    color: #000;
+    text-align: justify;
+    /* justify fill wholle page abd not leave any place by default text is align at left */
+    font-weight:400;
+    /* by default it is normal(400) */
+    text-decoration:overline;
+    /* line-through is used to put line from middle */
+    /* property of it is to underline text and highlight when hover */
+    text-transform: uppercase;
+    /* we can also use capitalize */
+    letter-spacing: 2px;
+    /* we can also use negative values */
+    word-spacing: 1px;
+    line-height: 1.5;
+    /* use google fonts to use font-family */
+    font-family: 'Roboto', sans-serif;
+    border: 4px solid green;
+
+}
+
+#second_para{
+    border-top-style:dotted;
+    border-left-style:double;
+    border-right-style:double;
+    border-bottom-style:dashed;
+    border: 4px solid rgb(0, green, 0); 
+    border-top: 4px solid rgb(0, green, 0);
+    border-color: green;
+    border-radius:10px;
+    border-width: 4px;
+    /* padding: to give space between content and border */
+    padding-right: 400px;
+    padding-left: 20px;
+    margin:40px;
+    /* padding: top right bottom left clockwise or padding:topbottom left right */
+    /* If don't want any border then just none in border-style */
+    /* for margin it is same like padding */
+
+}
+
+#ordered-list{
+    list-style-type: upper-alpha;
+    /* for lower case use lower-alpha upper-roman lower-roman */
+    list-style-position: inside;
+}
+
+#unordered-list{
+    list-style-type: none;
+    padding: 0;
+    /* one can also write none */
+}
+
+aside{
+    background-color: #27FB6B;
+    display:inline-block;
+    height:200px;
+    width:300px;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+section{
+    background-color: yellowgreen;
+    display:inline-block;
+    height:300px;
+    width:500px;
+}
+#wrapper{
+    background-color: rgb(51, 0, 255);
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+#image{
+    width:300px;
+    height:300px;
+    position: sticky;
+    top:40px;
+    /* position: static;In this top and bottom and left right does not work */
+    /* position: relative;
+    top: 100px;
+    bottom: 100px; */
+    /* position:absolute;
+    top:30px;
+    left:300px; */
+    
+}
+#wrapper2{
+    width: 600px;
+    height: 500px;
+    /* overflow is uesd to keep size of elements(by cutting extra part) same as size of block */
+    overflow: scroll;
+    /* difference between auto and scroll is scroll bar is visible if content is bigger in size  */
+}
+#article-pic{
+    width:300px;
+    height:300px;
+    float:right;
+}
+
+
+
+.cookies{
+    position:absolute;
+    top:50%;
+    left:40%;
+}
+
+.div1{
+    padding: 80px;
+    width: 300px;
+    height:400px;
+    background-color: #27FB6B;
+    /* Box sizing:border-box;makes it fit inside parent container and content can't come out */
+}
+
+.div2{
+    width: 300px;
+    height:400px;
+    padding: 80px;
+    background-color: #27FB6B;
+    box-sizing: border-box;
+}
+#image3{
+    height:100%;
+    float: right;
+}
+
+h2{
+    color:green;
+    text-shadow: 4px 4px 4px gray , 4px 10px 4px green; 
+     /*same way any number of shadows can be added  */
+    /* offset-x offset-y blur-radius color */
+    /* use , to add two shadow */
+}
+
+#shadow{
+    width:500px;
+    height:200px;
+    background-color: #000;
+    box-shadow: 4px 4px 4px green;
+}
+
+/* usage of selector */
+
+/* descendence selector
+article p{
+    background-color: aqua;
+} */
+
+/* Child selector */
+/* article > p{
+    background-color: aqua;
+} */
+
+/* Adjacent siblings - highlites after div 1 para if it is sibling of div*/
+/* sibling have same parent and come one after target element(ex div)*/
+/* all paernts should be same */
+/* div + p{
+    background-color: aqua;
+} */
+
+/* general siblibg selector */
+/* div should have same parent and all p after div will get highlighted */
+div ~ p{
+    background-color: #27FB6B;
+}
+footer{
+    text-align: center;
+    background-color: yellow;
+    height:50px;
+    padding-top: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

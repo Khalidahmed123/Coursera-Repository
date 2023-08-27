@@ -1,0 +1,108 @@
+<!-- javascript is an object orient scripting language 
+in scripting language we use open tag, close tag
+in calculator + - are objects and calculator performs subprogram using them
+use of js is it contains many libraries (which contains some functions) functions can be custom and inbuild(dateand time(), mathematical libraries) 
+operators % + - 
+control functions if-else, 
+statements contents which is reflected on web pages
+it is cross site platform i.e it can be used on windows, linux nad many more -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Javascript</title>
+</head>
+<body>
+    <div align="center">
+        <h1>do hardwork bro The God is with you</h1>
+    </div>
+    <script>
+        //global scope -can be accessed inside function
+        var major=null;
+        console.log(major.b);
+        var num1=3265
+        var num2=235.7
+        var sum=num1+num2
+        console.log(num1)
+        document.write(num2)
+        console.log(sum)
+        document.write(' '+sum)
+        let name='Khalid'
+        console.log(name)
+        let shukr="Alhadullilah"
+
+        console.log("Do hard work bro Allah only gives to hardworkers ",shukr)
+        const sabr="rabbiqfirli"
+        console.log(sabr)
+        //function->set of code that will be executed whenever it is called
+        function func(){
+            console.log("Do hard work bro God is their with you")
+            console.log("Remember your father and your death")
+        }
+        function funcadd(num3,num4){
+            var sum=num3+num4
+            console.log(sum)
+            console.log("Do hard work bro ",num3)
+        }
+        
+        funcadd(3,4)
+        function data(){
+            //functional scope
+            var a=10
+            let b=20
+            b=30
+            console.log(b)//const can't be redeclared or redefined
+
+            if(30>20){
+                //inside the block only variables are accesed from outside
+                var z2=234
+                let z=2300
+            }
+            console.log(z2)
+            const c=30
+            console.log(a)
+            console.log(num1)
+            console.log(2==2)
+            console.log(2===3)//to check daata type
+            //array
+            var taqua=["It is best thing for qabr and aaqirat",1,"astaqfirullah padho"]
+            var sabr=["sabr","namaz"]
+            console.log(sabr[1])
+            console.log(sabr[-1])
+            console.log(sabr)
+        }
+        data()
+        if(3>4){
+            console.log("Data is alhamdullilah correct")
+
+        }else{
+            console.log("Data is incorrecct Allah joh cahta hai karta hai haq ke saaths")
+        }
+        // var username=prompt("Enter username: ")
+        // var password=prompt("Enter pass:")
+        //Using if-else statement
+        // if(username=="Mohammed"&&password=="pass"){
+        //     console.log("You are logged in")
+        // }else{
+        //     print("bro correct yourself Allahuakbar")
+        // }
+        //for loop
+        for(i=0;i<10;i++){
+            console.log(+i)
+        }
+
+        let object1={
+            Need:'Sabr',
+            assharemubasshirah:10,
+            foraaqirat:"Taqua",
+            //key:values
+        }
+        console.log(object1)
+        console.log(object1.Need)
+        console.log(object1.Sabr)
+    </script>
+</body>
+</html>
+<!-- 
+    DOM Manupulation
+    api-application programming interface
+ -->

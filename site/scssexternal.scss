@@ -1,0 +1,14 @@
+div {
+    color: white;
+    background-color: green;
+}
+$mycolor: pink;//variable in sass
+
+h2{
+    background-color: $mycolor;
+    font-size:50px- 23.3px;
+}
+#footer{
+    text-align: center;
+    
+}

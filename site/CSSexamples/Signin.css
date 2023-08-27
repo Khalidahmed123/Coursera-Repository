@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+}
+body{
+    background-color: rgb(7, 225, 7);
+}
+#div-box{
+    text-align: center;
+    margin: 10% 40%;
+    display: block grid;
+    background-color: white;
+    position:relative;
+    padding: 120px 90px;
+}
+#input-of-box{
+box-sizing: border-box;
+border:rgb(0, 2, 7) solid 4px;
+/* align:center; */
+}

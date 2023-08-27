@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>MarksCard</title>
+        <link href="markscard.css" rel="stylesheet">
+        <script type="text/javascript" src="marksCard.js"></script>
+    </head>
+<body>
+    Full name:<input value="" type="text" id="stuname"><br>
+    Roll no.<input value="" type="text" id="sturollno"><br>
+    Subject-1:<input value="" type="text" id="s1">&nbsp;&nbsp;
+    Marks:<input value="" type="text" id="m1"><br>
+    Subject-2:<input value="" type="text" id="s2">&nbsp;&nbsp;
+    Marks:<input value="" type="text" id="m2"><br>
+    Subject-3:<input value="" type="text" id="s3">&nbsp;&nbsp;
+    Marks:<input value="" type="text" id="m3"><br>
+    Subject-4:<input value="" type="text" id="s4">&nbsp;&nbsp;
+    Marks:<input value="" type="text" id="m4"><br>
+    <br>
+    <input value="Generate Marks" type="submit" onclick="main()">
+    <div id="container">
+        <div class="marksheet">
+            <h1>Marksheet</h1>
+        </div>
+        <table id="info">
+            <tr>
+                <th>Name:</th>
+                <td id="namehere"></td>
+                <th>RollNo:</th>
+                <td id="rollnohere"></td>
+            </tr>
+        </table>
+        <table id="marks">
+            <tr>
+                <th>Subjecct name</th>
+                <th>Marks</th>
+                <th>Out of</th>
+            </tr>
+            <tr>
+                <td id="s1here"></td>
+                <td id="m1here"></td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td id="s2here"></td>
+                <td id="m2here"></td>
+                <td>100</td>
+            </tr><tr>
+                <td id="s3here"></td>
+                <td id="m3here"></td>
+                <td>100</td>
+            </tr><tr>
+                <td id="s4here"></td>
+                <td id="m4here"></td>
+                <td>100</td>
+            </tr>
+        </table>
+        <table id="data">
+            <tr>
+                <th>Total:</th>
+                <td id="stutotal"></td>
+            </tr>
+            <tr>
+                <th>Percentage:</th>
+                <td id="stupercentage"></td>
+            </tr>
+            <tr>
+                <th>Grade:</th>
+                <td id="stugrade"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

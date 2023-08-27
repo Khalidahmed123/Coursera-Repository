@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Seven</title>
+    <style>
+        #Home{
+            grid-area: Home;
+        }
+        #Link{
+            grid-area: link;
+
+        }
+        #Address{
+            grid-area: address;
+        }
+        #About{
+            grid-area: area;
+        }
+        #Task{
+            grid-area: task;
+        }
+        /* Assignment learn more about grid and flex */
+        #maindiv{
+            display: grid;
+            grid-template-areas: "Home Home Home Home Home Home"
+            "link link link address address address"
+            "area area area task task task";
+            padding: 20px;
+            margin:20px;
+            background-image: url("https://images.pexels.com/photos/12616283/pexels-photo-12616283.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load");
+            /* background-image:  linear-gradient(120deg,white,yellow,green,black); */
+            border-radius: 20px;
+        }
+        #maindivRedBox{
+            display: flex;
+            flex-direction: row;
+            /* grid-template-areas: "Home Home Home Home Home Home"
+            "link link link address address address"
+            "area area area task task task"; */
+            padding: 20px;
+            margin:20px;
+            background-image: url("https://images.pexels.com/photos/12616283/pexels-photo-12616283.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load");
+            /* background-image:  linear-gradient(120deg,white,yellow,green,black); */
+            border-radius: 20px;
+        }
+        #Home{
+            background-color: white;
+        }
+        div{
+            background-color: white;
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid Black;
+
+            border-radius: 20px;
+        }
+        .border1{
+            border-right: 5px;
+
+        }
+        .border3{
+            border-left: 5px;
+
+}
+.border2{
+    border-left: 5px;
+    border-right: 5px;
+}
+    </style>
+</head>
+<body>
+    <div id="maindiv">
+
+        <div id="Home">Details</div>
+        <div id="Link">Website</div>
+        <div id="Address">Contacts</div>
+        <div id="About">Visit the page</div>
+        <div id="Task">work done</div>
+    </div>
+    <div id="maindivRedBox">
+
+        <div id="HomeR" class="border1">Details</div>
+        <div id="LinkR" class="border2">Website</div>
+        <div id="AddressR" class="border2">Contacts</div>
+        <div id="AboutR" class="border2">Visit the page</div>
+        <div id="TaskR" class="border3">work done</div>
+        <table style="width:100%">
+            <tr>
+              <th>Firstname&nsps,</th>
+              <th>Lastname</th> 
+              <th>Age</th>
+            </tr>
+            <tr>
+              <td>Jill</td>
+              <td>Smith</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Eve</td>
+              <td>Jackson</td>
+              <td>94</td>
+            </tr>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>80</td>
+            </tr>
+          </table>
+    </div>
+   
+</body>
+</html>

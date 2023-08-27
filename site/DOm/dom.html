@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOM Manipulation</title>
+    <style>
+        #mydiv{
+          background-color: purple;
+          width: 200px;
+          height: 200px;   
+          /* text-align: center; */
+          border-radius: 20px;
+        }
+        button{
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div align="center" >
+        <h1 id="h1">Do hard work bro</h1>
+        <h2 class="data" onmousedown="id1()"> Allah is with right people so have sabr</h2>
+        <h3 > You have to get it bro or else you will go just by some number</h3>
+        <button onmousedown="id1()">Do hard work bro</button>
+        <div id="mydiv">
+            <br>
+            <br>
+            <br>
+            <button onclick="bg()">click to change color</button>
+        </div>
+
+    </div>
+  
+   <!-- DOM ->api for html applications
+        synchronous not continuously
+        DOM represents the content of html or xml document in the form of a tree
+        D-file
+        O- tag elements
+        M-layout structure
+        It is a programming interface or api for html or xml file
+        it can be used to easily read and access and update the contents of a file
+    API-Apllicaition Pro.gramming Interface 
+    api is interface between 2 or more applications (middle man) -->
+    <script>
+        // <!-- object consits of key and a value -->
+            // here we are using dom selectors
+        document.getElementById("h1").innerHTML="Do hard work bro this time you have to improve"
+        document.getElementsByClassName("data").innerHTML="Allah is with you bro"//without index it won't work for classes
+      function id1(){
+        document.getElementsByTagName("h3")[0].innerHTML="Believe in yourself"
+    }
+        let object1={
+                brand: 'apple',
+                model: 2435,
+                color: 'silver',
+                RAM: '256GB',
+        }
+        console.log(object1);
+        console.log(object1.model);
+            // dom event
+            // print("DO hard work bro\n");
+function bg(){
+    var r= Math.floor(Math.random()*255);
+    var b= Math.floor(Math.random()*255);
+    var g= Math.floor(Math.random()*255);
+    var image=Math.floor(Math.random()*100000);
+    var change="rgb("+r+","+g+","+b+")";
+    // https://images.pexels.com/photos/13060249/pexels-photo-13060249.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load
+    // var change=`https://images.pexels.com/photos/${image}/pexels-photo-${image}.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load`
+    // var change=`https://images.pexels.com/photos/13060249/pexels-photo-13060249.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load`
+    console.log(change);
+    // document.querySelector("#mydiv").style.background=change;
+    document.body.style.background=change;
+}
+
+    </script>
+<!-- <h1>Do hard work bro</h1> h1 p all are elements -->
+</body>
+</html>

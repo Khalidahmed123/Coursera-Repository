@@ -1,0 +1,10 @@
+#container{
+    background-color: aqua;
+    border:4px solid black;
+    display: none;
+    text-align: center;
+}
+
+.marksheet{
+    text-align: center;
+}
